@@ -12,6 +12,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params) #user params son solo los permitidos (ver más adelante)
     if @user.save
+      log_in @user #una vez que salvaste te logguea!
       # Handle a successful save. y redirige al profile del usuario:
         flash[:success] = "Benviendo a a App de Capsulas de Empleados!"
         redirect_to @user
