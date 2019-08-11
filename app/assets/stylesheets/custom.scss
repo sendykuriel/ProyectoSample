@@ -109,6 +109,9 @@ footer {
 
 /* miscellaneous */
 
+.fondito{
+ background-image: url(https://stmed.net/sites/default/files/nespresso-wallpapers-30732-6668114.jpg) ;
+}
 .debug_dump {
   clear: both;
   float: left;
@@ -179,5 +182,17 @@ input {
   @extend .has-error;
   .form-control {
     color: $state-danger-text;
+  }
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
   }
 }
